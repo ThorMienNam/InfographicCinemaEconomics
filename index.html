@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Economics – Kinh Tế Học Rạp Phim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ BACKGROUND DECORATION ░░ -->
+  <div class="bg-dots" aria-hidden="true"></div>
+  <div class="geo geo-1" aria-hidden="true"></div>
+  <div class="geo geo-2" aria-hidden="true"></div>
+  <div class="geo geo-3" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════ -->
+  <header class="hero" id="hero">
+    <div class="hero-top-line"></div>
+
+    <div class="hero-inner">
+      <!-- Floating icons -->
+      <div class="float-icon fi-reel" aria-hidden="true">🎬</div>
+      <div class="float-icon fi-popcorn" aria-hidden="true">🍿</div>
+      <div class="float-icon fi-ticket" aria-hidden="true">🎫</div>
+      <div class="float-icon fi-projector" aria-hidden="true">📽️</div>
+
+      <p class="hero-eyebrow">Phân Tích Toàn Diện</p>
+      <h1 class="hero-title">
+        <span class="hero-word">CINEMA</span>
+        <span class="hero-word accent-red">ECONOMICS</span>
+      </h1>
+      <p class="hero-subtitle">Kinh Tế Chính Trị Mác Lê Nin<br>Comprehensive Analysis of Cinema Profitability</p>
+
+      <!-- Hero KPI strip -->
+      <div class="hero-kpis">
+        <div class="kpi-item">
+          <span class="kpi-value" data-target="45">0</span><span class="kpi-unit">%</span>
+          <span class="kpi-label">Lợi nhuận từ<br>Bắp &amp; Nước</span>
+        </div>
+        <div class="kpi-divider"></div>
+        <div class="kpi-item">
+          <span class="kpi-value" data-target="25">0</span><span class="kpi-unit">%</span>
+          <span class="kpi-label">Tỷ suất<br>lợi nhuận TB</span>
+        </div>
+        <div class="kpi-divider"></div>
+        <div class="kpi-item">
+          <span class="kpi-value" data-target="90">0</span><span class="kpi-unit">%</span>
+          <span class="kpi-label">Chi phí / Doanh thu</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" aria-label="Cuộn xuống">
+      <span></span><span></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════
+         SECTION 1 – BÍ MẬT LỢI NHUẬN
+    ════════════════════════════════ -->
+    <section class="section section-revenue" id="revenue">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Section 01</span>
+          <h2 class="section-title yellow">BÍ MẬT LỢI NHUẬN</h2>
+          <p class="section-sub">Revenue Distribution – Phân Bổ Doanh Thu</p>
+        </div>
+
+        <div class="revenue-layout">
+
+          <!-- Pie Chart -->
+          <div class="chart-wrapper reveal">
+            <div class="chart-title">Cơ Cấu Doanh Thu</div>
+            <div class="pie-container">
+              <canvas id="pieChart" width="320" height="320" aria-label="Biểu đồ phân bổ doanh thu"></canvas>
+              <div class="pie-center">
+                <span class="pie-center-label">Doanh thu</span>
+                <span class="pie-center-sub">100%</span>
+              </div>
+            </div>
+            <div class="pie-legend">
+              <div class="legend-item" data-slice="0">
+                <span class="legend-dot" style="background:#ff1f2d"></span>
+                <span class="legend-text">🍿 Bắp &amp; Nước</span>
+                <span class="legend-pct">45%</span>
+              </div>
+              <div class="legend-item" data-slice="1">
+                <span class="legend-dot" style="background:#ffd400"></span>
+                <span class="legend-text">🎫 Bán Vé</span>
+                <span class="legend-pct">40%</span>
+              </div>
+              <div class="legend-item" data-slice="2">
+                <span class="legend-dot" style="background:#e0e0e0"></span>
+                <span class="legend-text">📺 Quảng Cáo</span>
+                <span class="legend-pct">10%</span>
+              </div>
+              <div class="legend-item" data-slice="3">
+                <span class="legend-dot" style="background:#888"></span>
+                <span class="legend-text">🎭 Khác</span>
+                <span class="legend-pct">5%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Revenue detail cards -->
+          <div class="revenue-cards">
+
+            <div class="rev-card reveal" data-delay="0">
+              <div class="rev-card-icon">🍿</div>
+              <div class="rev-card-body">
+                <div class="rev-card-header">
+                  <span class="rev-card-name">Concessions</span>
+                  <span class="rev-card-pct" style="color:var(--red)">45%</span>
+                </div>
+                <p class="rev-card-desc">Bắp rang, nước ngọt, snacks – Đây là <strong>mảng lợi nhuận chủ lực</strong>. Biên lợi nhuận gộp lên tới 80–90%, bù đắp cho biên vé thấp.</p>
+                <div class="rev-bar"><div class="rev-bar-fill" style="width:45%;background:var(--red)"></div></div>
+              </div>
+            </div>
+
+            <div class="rev-card reveal" data-delay="100">
+              <div class="rev-card-icon">🎫</div>
+              <div class="rev-card-body">
+                <div class="rev-card-header">
+                  <span class="rev-card-name">Ticket Sales</span>
+                  <span class="rev-card-pct" style="color:var(--yellow)">40%</span>
+                </div>
+                <p class="rev-card-desc">Doanh thu bán vé lớn nhất về giá trị tuyệt đối, nhưng phần lớn (50–60%) phải trả bản quyền phim cho nhà phân phối.</p>
+                <div class="rev-bar"><div class="rev-bar-fill" style="width:40%;background:var(--yellow)"></div></div>
+              </div>
+            </div>
+
+            <div class="rev-card reveal" data-delay="200">
+              <div class="rev-card-icon">📺</div>
+              <div class="rev-card-body">
+                <div class="rev-card-header">
+                  <span class="rev-card-name">Advertising</span>
+                  <span class="rev-card-pct" style="color:#e0e0e0">10%</span>
+                </div>
+                <p class="rev-card-desc">Quảng cáo trước suất chiếu, màn hình lobby, brand activation – nguồn thu phụ ngày càng quan trọng.</p>
+                <div class="rev-bar"><div class="rev-bar-fill" style="width:10%;background:#e0e0e0"></div></div>
+              </div>
+            </div>
+
+            <div class="rev-card reveal" data-delay="300">
+              <div class="rev-card-icon">🎭</div>
+              <div class="rev-card-body">
+                <div class="rev-card-header">
+                  <span class="rev-card-name">Others</span>
+                  <span class="rev-card-pct" style="color:#888">5%</span>
+                </div>
+                <p class="rev-card-desc">Cho thuê phòng chiếu sự kiện, tặng quà, merchandise, hợp đồng hợp tác thương mại khác.</p>
+                <div class="rev-bar"><div class="rev-bar-fill" style="width:5%;background:#888"></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Marx formula callout -->
+        <div class="marx-callout reveal">
+          <div class="marx-formula">
+            <span class="formula-label">Giá Trị Hàng Hóa (Mác)</span>
+            <div class="formula-eq">
+              <span class="formula-part fc">G = c</span>
+              <span class="formula-op">+</span>
+              <span class="formula-part fv">v</span>
+              <span class="formula-op">+</span>
+              <span class="formula-part fm">m</span>
+            </div>
+          </div>
+          <div class="marx-example">
+            <div class="mx-item">
+              <span class="mx-icon">🎫</span>
+              <span class="mx-product">Vé xem phim (100.000đ)</span>
+              <div class="mx-breakdown">
+                <span class="mx-c">c = 48K</span>
+                <span class="mx-v">v = 22K</span>
+                <span class="mx-m">m = 30K</span>
+              </div>
+            </div>
+            <div class="mx-item">
+              <span class="mx-icon">🍿</span>
+              <span class="mx-product">Combo bắp nước (80.000đ)</span>
+              <div class="mx-breakdown">
+                <span class="mx-c">c = 28K</span>
+                <span class="mx-v">v = 17K</span>
+                <span class="mx-m">m = 35K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         SECTION 2 – BÍ MẬT CHI PHÍ
+    ════════════════════════════════ -->
+    <section class="section section-costs" id="costs">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Section 02</span>
+          <h2 class="section-title yellow">BÍ MẬT CHI PHÍ</h2>
+          <p class="section-sub">Cost Structure – Cơ Cấu Chi Phí Rạp Phim</p>
+        </div>
+
+        <!-- Cost cards grid -->
+        <div class="cost-grid">
+
+          <div class="cost-card reveal" data-delay="0">
+            <div class="cost-card-num">01</div>
+            <div class="cost-icon">🎬</div>
+            <h3 class="cost-card-title">Film Licensing</h3>
+            <div class="cost-pct">50–60<span>%</span></div>
+            <div class="cost-type-badge">Tư bản bất biến (c₂)</div>
+            <p class="cost-desc">Chi phí lớn nhất. Trả trực tiếp cho nhà phân phối phim để có quyền chiếu trên màn ảnh rộng. Biến động theo từng bộ phim.</p>
+            <div class="cost-bar-wrap">
+              <div class="cost-bar-fill" style="--w:55%"></div>
+            </div>
+          </div>
+
+          <div class="cost-card reveal" data-delay="100">
+            <div class="cost-card-num">02</div>
+            <div class="cost-icon">👥</div>
+            <h3 class="cost-card-title">Staff &amp; Operations</h3>
+            <div class="cost-pct">20<span>%</span></div>
+            <div class="cost-type-badge capital-v">Tư bản khả biến (v)</div>
+            <p class="cost-desc">Lương nhân viên bán vé, soát vé, kỹ thuật viên, quầy bắp nước, vệ sinh. Điện, nước, internet, phần mềm đặt vé.</p>
+            <div class="cost-bar-wrap">
+              <div class="cost-bar-fill" style="--w:20%"></div>
+            </div>
+          </div>
+
+          <div class="cost-card reveal" data-delay="200">
+            <div class="cost-card-num">03</div>
+            <div class="cost-icon">🏢</div>
+            <h3 class="cost-card-title">Rent &amp; Real Estate</h3>
+            <div class="cost-pct">15<span>%</span></div>
+            <div class="cost-type-badge">Tư bản bất biến (c₂)</div>
+            <p class="cost-desc">Vị trí tại các trung tâm thương mại đắc địa. Chi phí thuê mặt bằng lớn theo tháng/quý, áp lực cố định.</p>
+            <div class="cost-bar-wrap">
+              <div class="cost-bar-fill" style="--w:15%"></div>
+            </div>
+          </div>
+
+          <div class="cost-card reveal" data-delay="300">
+            <div class="cost-card-num">04</div>
+            <div class="cost-icon">📈</div>
+            <h3 class="cost-card-title">Marketing &amp; Misc</h3>
+            <div class="cost-pct">10<span>%</span></div>
+            <div class="cost-type-badge">Tư bản bất biến (c₂)</div>
+            <p class="cost-desc">Chiến dịch quảng cáo, bảo trì thiết bị (máy chiếu 8–10 năm/lần), phần mềm, bảo hiểm và các khoản vật tư tiêu hao.</p>
+            <div class="cost-bar-wrap">
+              <div class="cost-bar-fill" style="--w:10%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Capital classification explainer -->
+        <div class="capital-explainer reveal">
+          <div class="cap-block cap-c">
+            <div class="cap-label">Tư Bản Bất Biến (c)</div>
+            <div class="cap-items">
+              <span>Máy chiếu kỹ thuật số</span>
+              <span>Hệ thống âm thanh vòm</span>
+              <span>Ghế VIP / Standard</span>
+              <span>Điều hòa &amp; LED</span>
+              <span>Bản quyền phim</span>
+              <span>Thuê mặt bằng</span>
+            </div>
+          </div>
+          <div class="cap-plus">+</div>
+          <div class="cap-block cap-v">
+            <div class="cap-label">Tư Bản Khả Biến (v)</div>
+            <div class="cap-items">
+              <span>Nhân viên bán vé</span>
+              <span>Soát vé &amp; hướng dẫn</span>
+              <span>Kỹ thuật viên chiếu</span>
+              <span>Nhân viên quầy bắp</span>
+              <span>Vệ sinh &amp; bảo vệ</span>
+              <span>Quản lý ca</span>
+            </div>
+          </div>
+          <div class="cap-plus">=</div>
+          <div class="cap-block cap-total">
+            <div class="cap-label">Tổng Tư Bản (c + v)</div>
+            <div class="cap-note">Nền tảng tính tỷ suất lợi nhuận p′ = m / (c + v)</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         SECTION 3 – TỶ SUẤT LỢI NHUẬN
+    ════════════════════════════════ -->
+    <section class="section section-profit" id="profit">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Section 03</span>
+          <h2 class="section-title yellow">TỶ SUẤT LỢI NHUẬN</h2>
+          <p class="section-sub">Profit Rate Analysis – Phân Tích Tỷ Suất Lợi Nhuận p′ = m / (c + v)</p>
+        </div>
+
+        <!-- Formula showcase -->
+        <div class="formula-showcase reveal">
+          <div class="fs-title">Công Thức Tỷ Suất Lợi Nhuận</div>
+          <div class="fs-formula">
+            <div class="fs-num">p (Lợi nhuận)</div>
+            <div class="fs-bar"></div>
+            <div class="fs-den">c (Bất biến) + v (Khả biến)</div>
+          </div>
+          <div class="fs-result">× 100%  =  <span class="fs-pct">p′</span></div>
+        </div>
+
+        <!-- Case comparison -->
+        <div class="cases-grid">
+
+          <div class="case-card reveal" data-delay="0">
+            <div class="case-label">Ví Dụ 1 — Trước Tối Ưu</div>
+            <div class="case-numbers">
+              <div class="cn-row"><span>Doanh thu</span><span class="cn-val">500 triệu</span></div>
+              <div class="cn-row"><span>Chi phí bất biến (c)</span><span class="cn-val red">300 triệu</span></div>
+              <div class="cn-row"><span>Chi phí lương (v)</span><span class="cn-val red">100 triệu</span></div>
+              <div class="cn-row cn-profit"><span>Lợi nhuận (p)</span><span class="cn-val green">100 triệu</span></div>
+            </div>
+            <div class="case-rate">
+              <div class="case-rate-label">Tỷ suất lợi nhuận</div>
+              <div class="case-rate-value" data-target="25">0</div>
+              <div class="case-rate-unit">%</div>
+            </div>
+          </div>
+
+          <div class="case-arrow">→</div>
+
+          <div class="case-card case-card-after reveal" data-delay="150">
+            <div class="case-label">Ví Dụ 2 — Sau Tối Ưu <span class="badge-new">+Giải Pháp</span></div>
+            <div class="case-numbers">
+              <div class="cn-row"><span>Doanh thu</span><span class="cn-val">580 triệu</span></div>
+              <div class="cn-row"><span>Chi phí bất biến (c)</span><span class="cn-val red">300 triệu</span></div>
+              <div class="cn-row"><span>Chi phí lương (v)</span><span class="cn-val red">100 triệu</span></div>
+              <div class="cn-row cn-profit"><span>Lợi nhuận (p)</span><span class="cn-val green">180 triệu</span></div>
+            </div>
+            <div class="case-rate highlight">
+              <div class="case-rate-label">Tỷ suất lợi nhuận</div>
+              <div class="case-rate-value" data-target="45">0</div>
+              <div class="case-rate-unit">%</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Solutions grid -->
+        <div class="solutions-title reveal">Giải Pháp Tối Đa Hóa Tỷ Suất Lợi Nhuận</div>
+        <div class="solutions-grid">
+
+          <div class="sol-card reveal" data-delay="0">
+            <div class="sol-icon">🌙</div>
+            <h4>Suất Chiếu Đêm</h4>
+            <p>Mở thêm suất chiếu xuyên đêm, tăng tỷ suất giá trị thặng dư mà không tăng c.</p>
+            <div class="sol-tag">Tăng m′</div>
+          </div>
+
+          <div class="sol-card reveal" data-delay="80">
+            <div class="sol-icon">🎁</div>
+            <h4>Combo &amp; Upsell</h4>
+            <p>Bán theo combo VIP, bắp đặc biệt, nước premium – mảng có biên lợi nhuận gộp cao nhất.</p>
+            <div class="sol-tag">Tăng m′</div>
+          </div>
+
+          <div class="sol-card reveal" data-delay="160">
+            <div class="sol-icon">🤖</div>
+            <h4>Tự Động Hóa</h4>
+            <p>Quầy tự check-in, đặt vé qua App – giảm v tương đối trong khi năng suất tăng.</p>
+            <div class="sol-tag">Tối ưu v</div>
+          </div>
+
+          <div class="sol-card reveal" data-delay="240">
+            <div class="sol-icon">⚡</div>
+            <h4>Tiết Kiệm Điện</h4>
+            <p>Đèn LED, điều hòa inverter, bảo trì định kỳ máy chiếu để kéo dài tuổi thọ, giảm c.</p>
+            <div class="sol-tag">Tiết kiệm c</div>
+          </div>
+
+          <div class="sol-card reveal" data-delay="320">
+            <div class="sol-icon">🔄</div>
+            <h4>Tăng Vòng Quay</h4>
+            <p>Rút ngắn thời gian vệ sinh giữa suất, tăng số suất chiếu mỗi ngày – tốc độ chu chuyển tư bản tăng.</p>
+            <div class="sol-tag">Tăng chu chuyển</div>
+          </div>
+
+          <div class="sol-card reveal" data-delay="400">
+            <div class="sol-icon">💺</div>
+            <h4>Ghế Hạng Cao</h4>
+            <p>Đầu tư ghế VIP, đôi, sweetbox – tăng giá vé mà khấu hao c₁ phân bổ dần trong 8–10 năm.</p>
+            <div class="sol-tag">Tăng m</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         BOTTOM SUMMARY BANNER
+    ════════════════════════════════ -->
+    <section class="summary-banner" id="summary">
+      <div class="container">
+        <div class="summary-inner reveal">
+          <div class="sum-kpi-row">
+            <div class="sum-kpi">
+              <span class="sum-kpi-val" data-target="85">0</span><span class="sum-kpi-unit">–95%</span>
+              <span class="sum-kpi-label">Chi phí / Doanh thu</span>
+            </div>
+            <div class="sum-divider"></div>
+            <div class="sum-main">
+              <div class="sum-flag">Kết Luận Quan Trọng</div>
+              <h3 class="sum-headline">Biên lợi nhuận hoạt động rất mỏng.</h3>
+              <p class="sum-body">Doanh thu bán hàng thực phẩm &amp; đồ uống (concessions) chính là nguồn lợi nhuận chủ lực. Đây là biểu hiện cụ thể của quy luật <strong>giá trị thặng dư (m)</strong> trong ngành dịch vụ giải trí: rạp phim tăng lợi nhuận bằng cách tăng m từ mảng có biên cao nhất.</p>
+            </div>
+            <div class="sum-divider"></div>
+            <div class="sum-icons">
+              <span>🎬</span><span>🍿</span><span>🎫</span><span>📽️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Cinema Economics — Phân Tích Kinh Tế Rạp Phim Hiện Đại &nbsp;|&nbsp; Lý Thuyết Giá Trị Lao Động &amp; Giá Trị Thặng Dư (C. Mác)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
